@@ -1,0 +1,16 @@
+namespace Personal_Website.Data;
+using Personal_Website.Models;
+
+using Microsoft.EntityFrameworkCore;
+
+public class ApplicationDbContext :Dbcontext
+{
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    {
+        
+    }
+
+    public DbSet<DB> Codes { get; set; }
+
+
+}
